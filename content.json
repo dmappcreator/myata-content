@@ -1,6 +1,15 @@
 {
   "schemaVersion": 2,
   "updatedAt": "2026-11-20T14:00:00+03:00",
+  "intro": {
+    "enabled": true,
+    "art": "cards",
+    "title": "",
+    "subtitle": "",
+    "note": "",
+    "buttonText": "Начать",
+    "imageUrl": "https://dmappcreator.github.io/myata-content/images/intro_cards.jpg"
+  },
   "app": {
     "name": "Мята",
     "currencySymbol": "₽",
