@@ -7,8 +7,8 @@
     "title": "",
     "subtitle": "",
     "note": "",
-    "buttonText": "Начать",
-    "imageUrl": "https://dmappcreator.github.io/myata-content/images/intro_cards.jpg"
+    "imageUrl": "https://dmappcreator.github.io/myata-content/images/intro_cards.jpg",
+    "durationMs": 2500
   },
   "app": {
     "name": "Мята",
