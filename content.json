@@ -3,11 +3,11 @@
   "updatedAt": "2026-11-20T14:00:00+03:00",
   "intro": {
     "enabled": true,
-    "art": "cards",
+    "art": "mfo",
     "title": "",
     "subtitle": "",
-    "note": "",
-    "imageUrl": "https://dmappcreator.github.io/myata-content/images/intro_cards.jpg",
+    "note": "Условия акции и итоговую стоимость определяет МФО. Одобрение не гарантируется.",
+    "imageUrl": "https://dmappcreator.github.io/myata-content/images/intro_mfo.jpg",
     "durationMs": 2500
   },
   "app": {
@@ -27,22 +27,22 @@
         "id": "card",
         "enabled": true,
         "imageUrl": "",
-        "title": "Кредитные карты в одном месте",
-        "subtitle": "Сравните условия банков и выберите подходящую"
+        "title": "Подбор займов в одном месте",
+        "subtitle": "Сравните условия МФО и выберите подходящее"
       },
       {
         "id": "zero",
         "enabled": true,
         "imageUrl": "",
-        "title": "Условия до подачи заявки",
-        "subtitle": "Лимит, ставка и льготный период — на сайте банка"
+        "title": "Условия видны сразу",
+        "subtitle": "Сумма, срок и ставка — до подачи заявки"
       },
       {
         "id": "limit",
         "enabled": true,
         "imageUrl": "",
-        "title": "Решение принимает банк",
-        "subtitle": "Мы не выдаём кредиты. Одобрение не гарантируется"
+        "title": "Займы до 100 000 ₽",
+        "subtitle": "Решение принимает МФО. Одобрение не гарантируется"
       }
     ]
   },
@@ -57,10 +57,10 @@
     },
     "term": {
       "label": "На срок",
-      "min": 61,
+      "min": 5,
       "max": 126,
       "step": 1,
-      "default": 90,
+      "default": 15,
       "unitForms": {
         "one": "день",
         "few": "дня",
@@ -82,63 +82,67 @@
   },
   "offersScreen": {
     "title": "Предложения для вас",
-    "subtitle": "Условия указывает банк. Внимательно прочитайте договор",
+    "subtitle": "Внимательно прочитайте условия и договор до подачи заявки",
     "buttonText": "Подать заявку",
-    "disclaimer": "Мята — информационный сервис. Мы не выдаём кредиты и не принимаем решения по заявкам: это делает банк. Лимит, ставку, льготный период и стоимость обслуживания определяет банк и указывает на своём сайте и в договоре. Одобрение не гарантируется. Кредит — платная услуга: при просрочке начисляются штрафы и неустойка, кредитная история может ухудшиться.",
-    "emptyText": "Сейчас нет доступных предложений. Загляните позже."
+    "disclaimer": "Мята — информационный сервис. Мы не выдаём займы и не принимаем решения по заявкам: это делает МФО. Условия определяет МФО, итоговые значения указаны в договоре. Одобрение не гарантируется. Займ — платная услуга. Максимальная ПСК в предложениях — 292 % годовых. Пример: 10 000 ₽ на 10 дней под 0,8 % в день — проценты 800 ₽, к возврату 10 800 ₽. Несвоевременный возврат влечёт штрафы и пени и ухудшает кредитную историю."
   },
   "offers": [
     {
-      "id": "card-1",
+      "id": "offer-1",
       "order": 1,
       "enabled": true,
-      "logoUrl": "",
-      "link": "https://t.leads.tech/click/1657/410/",
-      "tag": "Кредитная карта",
-      "conditionsText": "Кредитная карта Альфа-Банк",
+      "logoUrl": "https://dmappcreator.github.io/myata-content/logos/zaimer.png",
+      "link": "https://t.leads.tech/click/1657/1401/",
+      "tag": "",
+      "conditionsText": "1 000 – 50 000 ₽ на 5–31 день",
       "details": [
-        "Возраст заёмщика, лимит, ставка, льготный период и стоимость обслуживания указаны на сайте банка и в договоре."
+        "Возраст заёмщика: от 18 до 75 лет",
+        "Полная стоимость займа (ПСК): 292 % годовых. Ставка: от 0 % до 0,8 % в день."
       ],
-      "adLabel": "Реклама. АО «Альфа-Банк», ИНН 7728168971"
+      "adLabel": "Реклама. ПАО МКК «Займер», ИНН 5406836941"
     },
     {
-      "id": "card-2",
+      "id": "offer-2",
       "order": 2,
       "enabled": true,
-      "logoUrl": "",
-      "link": "https://t.leads.tech/click/1657/409/",
-      "tag": "Кредитная карта",
-      "conditionsText": "Кредитная карта Т-Банк",
+      "logoUrl": "https://dmappcreator.github.io/myata-content/logos/turbozaim.png",
+      "link": "https://t.leads.tech/click/1657/79/",
+      "tag": "",
+      "conditionsText": "3 000 – 30 000 ₽ на 7–21 день",
       "details": [
-        "Возраст заёмщика, лимит, ставка, льготный период и стоимость обслуживания указаны на сайте банка и в договоре."
+        "Возраст заёмщика: от 18 до 75 лет",
+        "0 % в день первые 7 дней при условии полного возврата в срок, далее 0,8 % в день.",
+        "Полная стоимость займа (ПСК): от 286,4 % до 292 % годовых."
       ],
-      "adLabel": "Реклама. АО «ТБанк», ИНН 7710140679"
+      "adLabel": "Реклама. ООО МКК «Турбозайм», ИНН 7702820127"
     },
     {
-      "id": "card-3",
+      "id": "offer-3",
       "order": 3,
       "enabled": true,
-      "logoUrl": "",
-      "link": "https://t.leads.tech/click/1657/1750/",
-      "tag": "Кредитная карта",
-      "conditionsText": "Кредитная карта Сбербанк",
+      "logoUrl": "https://dmappcreator.github.io/myata-content/logos/moneyman.png",
+      "link": "https://t.leads.tech/click/1657/1/",
+      "tag": "Первый заём 0 %",
+      "conditionsText": "1 000 – 100 000 ₽ на 5–126 дней",
       "details": [
-        "Возраст заёмщика, лимит, ставка, льготный период и стоимость обслуживания указаны на сайте банка и в договоре."
+        "Возраст заёмщика: от 18 до 75 лет",
+        "Ставка 0 % действует только на первый заём до 30 000 ₽. Полная стоимость займа указана в договоре на сайте МФО."
       ],
-      "adLabel": "Реклама. ПАО Сбербанк, ИНН 7707083893"
+      "adLabel": "Реклама. ООО МФК «Мани Мен», ИНН 7704784072"
     },
     {
-      "id": "card-4",
+      "id": "offer-4",
       "order": 4,
       "enabled": true,
-      "logoUrl": "",
-      "link": "https://t.leads.tech/click/1657/1752/",
-      "tag": "Кредитная карта",
-      "conditionsText": "Кредитная карта ВТБ",
+      "logoUrl": "https://dmappcreator.github.io/myata-content/logos/hurmacredit.png",
+      "link": "https://t.leads.tech/click/1657/794/",
+      "tag": "",
+      "conditionsText": "1 000 – 50 000 ₽ на 5–31 день",
       "details": [
-        "Возраст заёмщика, лимит, ставка, льготный период и стоимость обслуживания указаны на сайте банка и в договоре."
+        "Возраст заёмщика: от 18 до 75 лет",
+        "Полная стоимость займа (ПСК): 292 % годовых. Ставка: от 0 % до 0,8 % в день."
       ],
-      "adLabel": "Реклама. Банк ВТБ (ПАО), ИНН 7702070139"
+      "adLabel": "Реклама. ООО «Хурма Кредит МКК», ИНН 5262390614"
     }
   ],
   "faq": {
@@ -149,73 +153,73 @@
         "id": "what",
         "enabled": true,
         "question": "Что такое Мята?",
-        "answer": "Это сервис подбора кредитных карт! Мы показываем предложения банков и открываем их сайты. Сами карты и кредиты мы не выдаём, банком не являемся и решений по заявкам не принимаем."
+        "answer": "Это сервис подбора займов. Мы показываем предложения МФО и открываем их сайты. Сами займы мы не выдаём и решений по заявкам не принимаем."
       },
       {
         "id": "apply",
         "enabled": true,
-        "question": "Как оформить карту?",
-        "answer": "Выберите подходящее предложение и нажмите «Подать заявку». Откроется сайт банка, где вы заполняете заявку. Решение по ней принимает банк."
+        "question": "Как оформить заявку?",
+        "answer": "Выберите сумму и срок, откройте подходящее предложение и заполните анкету на сайте МФО. Решение по заявке принимает сама МФО."
       },
       {
         "id": "who",
         "enabled": true,
-        "question": "Кто может получить карту?",
-        "answer": "У каждого банка свои требования. Обычно нужны возраст от 18 лет и паспорт гражданина РФ. Точный список условий смотрите на сайте выбранного банка."
+        "question": "Кто может получить займ?",
+        "answer": "У каждой МФО свои требования. Чаще всего нужны паспорт РФ, возраст от 18 лет и банковская карта. Точный список условий смотрите на сайте выбранной организации."
       },
       {
         "id": "cost",
         "enabled": true,
-        "question": "Сколько стоит кредитная карта?",
-        "answer": "Лимит, процентную ставку, льготный период, плату за обслуживание и комиссии определяет банк и указывает на своём сайте и в договоре. Перед оформлением внимательно проверьте условия, в том числе ставку после льготного периода и комиссию за снятие наличных."
+        "question": "Сколько придётся вернуть?",
+        "answer": "Итоговую сумму, ставку и срок определяет МФО и указывает в договоре. Максимальная ПСК в наших предложениях — 292 % годовых: за 10 дней по 0,8 % в день на 10 000 ₽ набегает 800 ₽ процентов. Проверьте условия перед подписанием."
       },
       {
         "id": "overdue",
         "enabled": true,
-        "question": "Что будет, если не вносить платежи вовремя?",
-        "answer": "Банк начисляет штрафы и неустойку, а информация о просрочке передаётся в бюро кредитных историй, что ухудшает вашу кредитную историю. Вносите обязательный платёж по карте вовремя."
+        "question": "Что будет, если не вернуть займ вовремя?",
+        "answer": "Начисляются штрафы и пени, а информация о просрочке попадает в бюро кредитных историй. Если понимаете, что не успеваете, заранее свяжитесь с МФО и обсудите продление срока."
       },
       {
         "id": "legal",
         "enabled": true,
-        "question": "Как проверить, что банк работает легально?",
-        "answer": "У банка должна быть действующая лицензия Банка России. Проверить её можно на сайте cbr.ru по названию или ИНН банка."
+        "question": "Как проверить, что МФО работает легально?",
+        "answer": "Организация должна быть в государственном реестре МФО на сайте Банка России, cbr.ru. Проверить её можно по названию или ИНН."
       },
       {
         "id": "what_en",
         "enabled": true,
         "question": "What is Myata?",
-        "answer": "Myata is a credit card comparison service. We show offers from banks and open their websites. We are not a bank, do not issue cards or loans and do not make decisions on applications."
+        "answer": "Myata is a loan comparison service. We show offers from microfinance organizations (MFOs) and open their websites. We do not issue loans and do not make decisions on applications."
       },
       {
         "id": "apply_en",
         "enabled": true,
-        "question": "How do I apply for a card?",
-        "answer": "Choose a suitable offer and tap \"Apply\". The bank's website will open, where you fill in the application. The bank itself makes the decision."
+        "question": "How do I apply?",
+        "answer": "Choose an amount and term, open a suitable offer and fill in the form on the MFO's website. The MFO itself decides on your application."
       },
       {
         "id": "who_en",
         "enabled": true,
-        "question": "Who can get a card?",
-        "answer": "Each bank has its own requirements. Usually you must be at least 18 years old and hold a Russian passport. See the exact conditions on the selected bank's website."
+        "question": "Who can get a loan?",
+        "answer": "Each MFO has its own requirements. Usually you need a Russian passport, to be at least 18 years old and to have a bank card. See the exact list of conditions on the selected organization's website."
       },
       {
         "id": "cost_en",
         "enabled": true,
-        "question": "How much does a credit card cost?",
-        "answer": "The limit, interest rate, grace period, service fee and commissions are set by the bank and stated on its website and in the contract. Check the terms carefully before applying, including the rate after the grace period and the cash withdrawal fee."
+        "question": "How much will I have to repay?",
+        "answer": "The total amount, rate and term are set by the MFO and stated in the contract. The maximum APR in our offers is 292% per year: at 0.8% per day, 10,000 ₽ for 10 days accrues 800 ₽ in interest. Check the terms before signing."
       },
       {
         "id": "overdue_en",
         "enabled": true,
-        "question": "What happens if I don't pay on time?",
-        "answer": "The bank charges fines and penalties, and the delay is reported to credit bureaus, which worsens your credit history. Make the required card payment on time."
+        "question": "What happens if I don't repay on time?",
+        "answer": "Fines and penalties are charged, and information about the delay is passed to credit bureaus. If you know you won't make it, contact the MFO in advance and discuss extending the term."
       },
       {
         "id": "legal_en",
         "enabled": true,
-        "question": "How can I check that a bank operates legally?",
-        "answer": "A bank must hold a valid Bank of Russia license. You can check it on cbr.ru by the bank's name or tax ID (INN)."
+        "question": "How can I check that an MFO operates legally?",
+        "answer": "The organization must be listed in the state register of MFOs on the Bank of Russia website, cbr.ru. You can check it by name or tax ID (INN)."
       }
     ]
   }
